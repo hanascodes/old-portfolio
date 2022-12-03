@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        <!------------
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" /> ------->
+        <meta charset="ISO 8859-2">
+        <meta name="viewport" content="width=device-width", initial scale=1.0>
+        <title>Relevance of Linux in CyberSec</title>
+        <link rel="stylesheet" href="blogstylesheet.css" type="text/css">
+        <link rel="icon" class="title-icon" href="../images/icons/title-icon.png" type="image/x-icon">
+        <!---font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">  
+        <!---font-->
+        
+
+    </head>
+
+    <body>
+
+
+        <!-----horizontalni meni----->
+        <header>
+            <nav>
+                <ul class="nav-linkovi">
+                    <li class="nav-link"><a href="../home/home.html">/root</a></li>
+                    <li class="nav-link"><a href="../home/home.html#bio">/bio</a></li>
+                    <li class="nav-link"><a href="../home/home.html#eduskills">/edu_and_skillset</a></li>
+                    <li class="nav-link"><a href="../home/home.html#work">/work</a></li>
+
+                    <li class="nav-link dropdown"><a href="../home/home.html#projects">/projects</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../home/home.html#password-generator">Password generator</a></li>
+                            <li><a href="../home/home.html#CV">Latex CV</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link dropdown"><a href="#blog">/blog</a>
+                        <ul class="dropdown-content">
+                            <li><a href="article1.html">Search Engine Optimization</a></li>
+                            <li><a href="article2.html">Relevance of Linux in CyberSec</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link dropdown"><a href="../media/mediahome.html">/media</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../media/cyber.html">Cyber</a></li>
+                            <li><a href="../media/life.html">Life</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="start"></div>
+
+        <div class="articles-container1">
+            <article>
+                <h1>Relevance of Linux in Cyber Security</h1>
+                <br>
+                <p>It's no secret that various Linux distributions are 
+                    used by hackers worldwide, but what's the appeal? Why not 
+                    simply use Windows or some other operating system? Furthermore,
+                    which distributions are designed for the purpose of penetration
+                    testing? Let's take a look at the table below.
+                </p>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="windows">Windows</th>
+                            <th class="linux">Linux</th>
+
+                        </tr>
+ 
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th class="yellowcell">User management</th>
+                            <td class="windows">Originally written for one user-one computer</td>
+                            <td class="linux">Multi-users with various access rights</td>
+                            
+                        </tr>
+                        <tr>
+                            <th class="yellowcell">Malware</th>
+                            <td class="windows">Since 2009, over 9 million malwares have targeted Windows.</td>
+                            <td class="linux">As of 2006, only 800 malwares had been discovered.</td>
+                        </tr>
+                        <tr>
+                            <th class="yellowcell">Open vs Closed</th>
+                            <td class="windows">Claims its platform is more secure because of a comprehensive approach using the Security Development Lifecycle</td>
+                            <td class="linux">Claims its platform is more secure because all its code is reviewed by lots of people, therefore more bugs are detected (also known as the Linux Law).</td>
+                        </tr>
+                        <tr>
+                            <th class="yellowcell">Threat detection and solution</th>
+                            <td class="windows">Threat detection and solution is relatively fast.</td>
+                            <td class="linux">Releasing a patch with a fix for a major threat can take up to 3 months.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <p>As you can see, the obvious choice is <strong>Linux</strong>. </p>
+                    
+                    <p>In the words of <a href="https://en.wikipedia.org/wiki/Eric_S._Raymond">Eric S. Raymond</a>, 
+                    a world-famous hacker and open-source advocate:<blockquote cite="http://www.catb.org/~esr/faqs/hacker-howto.html">Yes, there are 
+                        other operating systems in the world besides Unix. But they're distributed in <strong>binary</strong> — <strong>you can't read the code, and you can't modify it.</strong> Trying to learn to hack on a Microsoft Windows machine or under any other closed-source system is like trying to learn to dance while wearing a body cast.</blockquote>
+                    Furthermore,
+                    <blockquote cite="http://www.catb.org/~esr/faqs/hacker-howto.html">Unix is the operating system of the Internet. While you can learn to use the Internet without knowing Unix, you can't be an Internet hacker without understanding Unix. For this reason, the hacker culture today is pretty strongly Unix-centered. </blockquote>
+                    Linux is open-source and free, which means that anyone can use it for any type of work, edit, copy, distribute various aspects of a Linux based OS without violating any copyright law, term or condition.
+                    Let's get into the various distributions used by Cyber Security professionals.
+                </p>
+                <br>
+                <h3>Distributions designed for pentesting</h3>
+                <dl>
+                    <dt>Kali Linux</dt>
+                    <dd>Armed with over 600 pre-installed pentesting programs, 
+                        from Armitage, Nmap, Wiresshark, John the Ripper, 
+                        Aircrack to Burpsuite and many more, Kali Linux is the AK-47 of
+                        Linux distros. It gained popularity among newbies because it's relatively easy to use. </dd>
+                    <br>
+                    <figure class="mrrobot">
+                        <img src="images/mrrobot2.png" alt="Eliott in Mr Robot using Kali Linux">
+                    </figure>
+                    <dt>Parrot</dt>
+                    <dd>Used mostly by penetration testers who need a cloud-friendly environment with online anonymity 
+                        and an encrypted system, Parrot OS is a Debian based, security OS. Just like Kali, 
+                        it's available as a rolling release, which means every tool in its arsenal is up to date.
+                    Here's a quick tutorial if you want to get started with it:
+        
+                    </dd>
+                    <br>
+                    <div class="video1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A7c_GOduMbA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+
+                </dl>
+                <br>
+                <p>There are many others, such as:</p>
+                <ul class="distro-list">
+                    <li>BlackArch</li>
+                    <li>ArchStrike</li>
+                    <li>Fedora Security Spin</li>
+                    <li>Network Security Toolkit</li>
+                    <li>CAINE(Computer Aided Investigative Environment)</li>
+                    <li>Pentoo</li>
+                </ul>
+
+
+            </article>
+        </div>
+
+
+        <!--references
+        
+        http://home.ubalt.edu/abento/701/elsecure/internetsecurity/sld020.htm
+        https://www.slideshare.net/pukkarazvampire/linux-vs-windows-30447101
+        https://www.getwox.com/linux-vs-windows/
+        http://www.catb.org/~esr/faqs/hacker-howto.html
+        https://www.quora.com/Why-do-most-people-use-Linux-for-hacking
+        https://en.wikipedia.org/wiki/Kali_Linux
+        https://www.quora.com/Why-is-the-Kali-Linux-most-popular
+        -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="home-in-footer">
+                <!--preuzeto sa: https://image.flaticon.com/icons/png/512/69/69524.png-->
+                <a href="" id="#start"><img class="homeicon" src="../images/icons/home-icon-colored.png" alt="home icon"></a> <!---ikonica za home bi bila kjut e kad se hovera, promijeni se ikonica u homeicon2 --></li>
+                <!--preuzeto sa, plus moj edit: https://images.emojiterra.com/google/android-10/512px/1f4aa.png-->
+                </div>
+
+                <div class="copyright">
+                <p>Created with <img class="biceps" src="../images/icons/bicepsemojiwtattooadded.png" alt="strength and love"> by Hana K. All rights reserved.</p>
+                </div>
+
+                <div class="social-media">
+                    <!--preuzeto sa: https://images.app.goo.gl/VR2aXDBSQQu342PK9-->
+                    <a href="https://github.com/hanascodes"><img src="../images/icons/github-icon.png" alt="github-icon"></a>
+                    <!--preuzeto sa: https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png--> 
+                    <a href="https://www.instagram.com/hanasweirdlife/"><img src="../images/icons/instagram-icon.png" alt="instagram-icon"></a>
+                    <!--preuzeto sa: https://www.freepnglogos.com/uploads/linkedin-blue-style-logo-png-0.png -->
+                    <a href="https://ba.linkedin.com/in/hana-kova%C4%8Devi%C4%87-577719128"><img src="../images/icons/linkedin-icon.png" alt="linkedin-icon"></a>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>

@@ -1,0 +1,296 @@
+:root{
+    /*ispiraciju za ime ove varijable i boju sam dobila dok sam pravila veceru*/
+    --redcabbage: rgb(255, 0, 157);
+    --redcabbagegradient: rgba(255, 0, 157, 0.666);
+    --neonblue: rgb(76, 214, 252);
+    --neonbluegradient: rgba(76, 214, 252, 0.666);
+    --matrixgreen: rgb(0, 255, 0);
+    --hotred: rgb(204, 0, 0);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+  } 
+
+  body{
+    background-image: url(../images/background-triangles.png);
+    color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+
+  nav{
+    margin: 0 auto;
+    width: 100%;
+    background: var(--redcabbagegradient);
+    
+  }
+  
+  .nav-linkovi{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  
+  .nav-link{
+    padding: 20px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .nav-link a{
+    text-decoration: none;
+    color: var(--neonblue);
+    text-shadow: 1px 1px white;
+  }
+  .nav-link a:hover{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20;
+    background-color: var(--neonblue);
+    text-shadow: 1px 1px black;
+  
+  }
+  .nav-link a:visited{
+    text-decoration: none;
+    color: black;
+  
+  }
+  a:active{
+    background-color: yellow;
+  }
+  /*dropdown*/
+  /*sadrzaj dropdowna*/
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    list-style-type: none;
+    z-index: 1;
+  }
+  /*sadrzaj dropdowna*/
+  .dropdown-content a{
+    color: #00d3ff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 1px 1px black;
+  
+  }
+  /*kursor iznad sadrzaja dropdowna*/
+  .dropdown-content a:hover {background-color:  var(--neonblue)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  /*promijeni se boja elementa kada se prikaze sadrzaj dropdowna*/
+  .dropdown-content:hover .nav-link a{
+    background: var(--neonblue);
+  }
+  
+  
+  /*dropdown*/
+  /*header*/
+  footer{
+    background-color:var(--neonbluegradient);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    
+    color: black;
+    text-shadow: 2px 2px white;
+  }
+  
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    
+  
+    justify-content: space-evenly;
+  }
+  
+  .home-in-footer,
+  .copyright,
+  .social-media{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .social-media a{
+    display: flex;
+    margin-right: 15px;
+    
+  }
+  
+  .biceps{
+    height: 35px;
+    margin-bottom: -5px;
+  }
+  
+  .social-media img, .homeicon {
+    height: 42px;
+    object-fit: cover;
+  }
+  /*copyright paragraf*/
+  .footer-container p{
+    
+    color: var(--redcabbage);
+    /*sjena teksta koja je zapravo podebljan tekst*/
+    text-shadow: 1px 1px black;
+  
+  }
+  .copyright img{
+    display: inline;
+  }
+  .social-media{
+    list-style-type: none;
+    display: flex;
+  }
+  /*ikonice za drustvene mreze*/
+  /*footer*/
+
+
+
+
+
+
+/*title effects*/
+.short-bio h3{
+  text-shadow: none;
+}
+.highlight{
+  background-color: black;
+}
+.username{
+  color: var(--matrixgreen);
+}
+
+.rooted{
+  color: var(--hotred);
+}
+
+/*title linux terminal effects*/
+
+
+.mrrobot img{
+  max-width: 75%;
+  min-width: 75%;
+  border-radius: 25px;
+}
+
+.articles-container1 table{
+  width: 60%;
+  border: 20px solid black;
+  border-radius: 10px;
+  background: white;
+  /*set on separate because empty cells appear if collapse is set to collapse*/
+  border-collapse: separate;
+  empty-cells: hide;
+}
+.windows{
+  background: blue;
+  color: white;
+}
+.linux{
+  background: var(--matrixgreen);
+
+}
+.yellowcell{
+  background: yellowgreen;
+}
+.articles-container1 table th, td{
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+}
+.articles-container1 table th{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.articles-container1 blockquote{
+  font-style: italic;
+}
+.articles-container1 dl, dt{
+  text-align: left;
+}
+  /*articles*/
+.articles-container1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.articles-container1 article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  background: rgba(140,140,140,0.808);
+  border-radius: 25px;
+  padding: 25px;
+  width: 80%;
+}
+    /*articles*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/::selection*/
+
+::selection{
+  background-color: rgb(0, 255, 0);
+}
+
+.mrrobot{
+  max-width: 70%;
+  margin-left: 25%;
+}
+
+.video1{
+  margin-left: 25%;
+}
+.distro-list{
+
+  list-style-type: none;
+}
+.articles-container1 h1, h3{
+  text-shadow: 1px 1px white;
+}
+
+.articles-container1 dt{
+  text-shadow: 1px 1px white;
+  font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .articles-container1 .video1{
+    max-width: 100%;
+    margin: 15%;
+  }
+}
+

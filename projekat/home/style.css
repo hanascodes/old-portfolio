@@ -1,0 +1,430 @@
+/*root selektor mi dozvoljava da ciljam na roditelje sa najvisim nivoom u stablu dokumenata i da definisem globalne varijable*/
+:root{
+  
+  --redcabbage: rgb(255, 0, 157);
+  --redcabbagegradient: rgba(255, 0, 157, 0.666);
+  --neonblue: rgb(76, 214, 252);
+  --neonbluegradient: rgba(76, 214, 252, 0.666);
+  --matrixgreen: rgb(0, 255, 0);
+  --hotred: rgb(204, 0, 0);
+}
+/*moje cyberpunk boje*/
+html {  
+  /*ideja i rjesenje: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors*/
+  scroll-padding-top: 6vh; /* malo manje od visine headera */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+/*napisati izvor fonta*/
+  font-family: 'JetBrains Mono', monospace;
+} 
+
+.page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+
+body{
+
+  background-image: url(../images/background-triangles.png);
+  color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*what does this mean*/
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*header*/
+header {
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  margin: 0 auto;
+  
+  background: var(--redcabbagegradient);
+}
+
+.nav-linkovi{
+  display: flex;
+  justify-content: space-evenly;
+  
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.nav-link{
+  padding: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.nav-link a{
+  text-decoration: none;
+  color: var(--neonblue);
+  text-shadow: 1px 1px white;
+}
+.nav-link a:hover{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20;
+  background-color: var(--neonblue);
+  text-shadow: 1px 1px black;
+
+}
+.nav-link a:visited{
+  text-decoration: none;
+  color: black;
+
+}
+a:active{
+  background-color: yellow;
+}
+/*dropdown*/
+/*sadrzaj dropdowna*/
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  list-style-type: none;
+  z-index: 1;
+}
+/*sadrzaj dropdowna*/
+.dropdown-content a{
+  color: #00d3ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-shadow: 1px 1px black;
+
+}
+/*kursor iznad sadrzaja dropdowna*/
+.dropdown-content a:hover {background-color:  var(--neonblue)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+/*promijeni se boja elementa kada se prikaze sadrzaj dropdowna*/
+.dropdown-content:hover .nav-link a{
+  background: var(--neonblue);
+}
+
+
+/*dropdown*/
+/*header*/
+
+
+
+
+
+
+
+
+
+
+/*home*/
+/*kartica sa osnovnim informacijama*/
+
+
+/*home*/
+
+
+/*footer*/
+footer{
+  background-color:var(--neonbluegradient);
+  position: static;
+  bottom: 0;
+  width: 100%;
+  
+  color: black;
+  text-shadow: 2px 2px white;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  
+
+  justify-content: space-evenly;
+}
+
+.home-in-footer,
+.copyright,
+.social-media{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.social-media a{
+  display: flex;
+  margin-right: 15px;
+  
+}
+
+.biceps{
+  height: 35px;
+  margin-bottom: -5px;
+}
+
+.social-media img, .homeicon {
+  height: 42px;
+  object-fit: cover;
+}
+/*copyright paragraf*/
+.sadrzaj-footera p{
+  
+  color: var(--redcabbage);
+  /*sjena teksta koja je zapravo podebljan tekst*/
+  text-shadow: 1px 1px black;
+
+}
+.copyright img{
+  display: inline;
+}
+
+
+
+/*
+/*ikonice za drustvene mreze*/
+.social-media{
+  list-style-type: none;
+  display: flex;
+}
+
+/*ikonice za drustvene mreze*/
+/*footer*/
+
+
+::selection{
+  background-color: rgb(0, 255, 0);
+}
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+  .bio-container{
+    flex-direction: column;
+  }
+}
+
+.bio-container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.basic-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5vh;
+  padding: 40px;
+  border: 4px solid black;
+  border-radius: 25px;
+  background: var(--neonbluegradient);
+  text-shadow: 0.35px 1px white;
+}
+.short-bio{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0 5vh;
+  padding: 40px;
+  border: 4px solid var(--neonblue);
+  border-radius: 25px;
+  background: black;
+  color: white;
+  text-shadow: 0.35px 1px var(--matrixgreen);
+  
+}
+.short-bio ul{
+  padding-left: 25px;
+}
+.short-bio ol{
+  padding-left: 35px;
+
+}
+.short-bio a{
+  text-decoration: none;
+  color: var(--matrixgreen);
+  text-shadow: 1px 1px var(--redcabbage);
+}
+.short-bio a:hover{
+  background: white;
+  color: black;
+  text-shadow: 1px 1px var(--redcabbage);
+}
+/*djeca svih kartica*/
+
+
+
+
+
+
+
+
+/*kartica sa osnovnim informacijama*/
+/*
+.basic-info img{
+  max-width: 15vh;
+}
+*/
+.basic-info p, h4{
+  padding: 5px;
+ 
+}
+
+
+.projects h3{
+  letter-spacing: 5px;
+  text-align: left;
+  font-size: 35px;
+}
+.projects a{
+  text-decoration: none;
+  color: var(--redcabbage);
+}
+.projects a:hover{
+  text-decoration: none;
+  color: black;
+  background: var(--matrixgreen);
+}
+
+.projects button{
+  background: var(--redcabbage);
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 15px;
+  text-shadow: 0.35px 1px white;
+  padding: 15px;
+
+}
+.projects button:hover{
+  background: var(--neonblue);
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 15px;
+  text-shadow: 0.35px 1px white;
+  padding: 15px;
+
+}
+/*kartica sa osnovnim informacijama*/
+
+
+/*sve kartice*/
+
+
+
+
+.projects{
+    display: flex;
+    width: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vh 5vh;
+    border: 4px solid black;
+    padding: 40px;
+    border-radius: 25px;
+    background: var(--neonbluegradient);
+    text-shadow: 0.35px 1px white;
+
+} 
+
+
+
+
+.password-generator iframe{
+  width: 100%;
+  border: 4px solid black;
+}
+
+/*sve kartice*/
+
+
+/*kratka biografija*/
+
+.short-bio h3{
+  text-shadow: none;
+}
+/*terminal text effect*/
+.highlight{
+  background-color: black;
+}
+.username{
+  color: var(--matrixgreen);
+}
+
+.rooted{
+  color: var(--hotred);
+}
+/*terminal text effect*/
+
+
+/*kratka bio*/
+
+/*contact-form*/
+.form-container{
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh auto;
+  border: 4px solid black;
+  padding: 40px;
+  border-radius: 25px;
+  background: var(--neonbluegradient);
+  text-shadow: 0.35px 1px white;
+
+} 
+.form-container form{
+  display: flex;
+  flex-direction: column;
+}
+form button{
+  background: var(--redcabbage);
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 15px;
+  text-shadow: 0.35px 1px white;
+
+}
+
+form input, textarea{
+  border: 1px solid black;
+  
+}
+
+form button:hover{
+  background: var(--neonblue);
+}
+
+
+form label{
+  margin-top: 10px;
+}
+
+.form-and-project-container{
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+/*contact form*/
